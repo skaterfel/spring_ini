@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-//oi
+//firstservlet mapeamento
 @WebServlet(urlPatterns = "/firstservlet")
 public class OiMundoServlet extends HttpServlet{
 	@Override
@@ -18,7 +18,7 @@ public class OiMundoServlet extends HttpServlet{
 		PrintWriter out = resp.getWriter();
 		out.println("<html>");
 		out.println("<body>");
-		out.println("oi mundo, parabens voce escreveu seu primeiro servlet");
+		out.println("oi mundo, parabens voce escreveu seu primeiro servlets");
 		out.println("</body>");
 		out.println("</html>");
 		
