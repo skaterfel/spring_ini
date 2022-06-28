@@ -20,6 +20,11 @@ public class NovaEmpresaServlet extends HttpServlet {
 		System.out.println("Cadastrando nova empresa.");
 		PrintWriter out = response.getWriter(); // ler parametros da requisição http ?nome=X
 		String nomeEmpresa = request.getParameter("nome");
+		Empresa empresa = new Empresa();
+		empresa.setNome(nomeEmpresa);
+		
+		Banco banco = new Banco();
+		banco.adiciona(empresa);
 		
 		out.println("<html><body>Empresa " + nomeEmpresa + " Cadastrada com Sucesso!</body></html>");
 	}
