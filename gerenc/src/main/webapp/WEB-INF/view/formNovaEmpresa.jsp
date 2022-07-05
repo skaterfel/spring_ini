@@ -9,7 +9,8 @@
 <title>Cadastrando Empresa 01</title>
 </head>
 <body>
-
+	<c:import url="logout-parcial.jsp" />
+	
 	<form action="${linkServletNovaEmpresa}" method="post">
 		Nome: <input type="text" name="nome" /> 
 		DataAbertura: <input type="text" name="data" />
