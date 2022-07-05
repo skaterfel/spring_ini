@@ -9,7 +9,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Java Standard Taglib</title>
+<title>LISTA EMPRESAS ✅</title>
 </head>
 <body>
 
@@ -32,5 +32,5 @@
 		</c:forEach>
 	</ul>
 	
-	<a href="formNovaEmpresa.jsp">Adicionar nova Empresa</a>
+	<a href="entrada?acao=NovaEmpresaForm">Adicionar nova Empresa</a>
 </html>
