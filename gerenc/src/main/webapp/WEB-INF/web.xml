@@ -6,10 +6,39 @@
   </welcome-file-list>
   <servlet>
     <servlet-name>QQcoisa</servlet-name>
-    <servlet-class>main.java.br.com.alura.gerenciador.servlet.OiMundoServlet</servlet-class>
+    <servlet-class>br.com.alura.gerenciador.servlet.OiMundoServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>QQcoisa</servlet-name>
     <url-pattern>/oi</url-pattern>
   </servlet-mapping>
+  
+  <filter>
+    <filter-name>AF</filter-name>
+    <filter-class>br.com.alura.gerenciador.servlet.AutorizacaoFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>AF</filter-name>
+    <url-pattern>/entrada</url-pattern>
+  </filter-mapping>
+  
+  <filter>
+    <filter-name>MF</filter-name>
+    <filter-class>br.com.alura.gerenciador.servlet.MonitoramentoFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>MF</filter-name>
+    <url-pattern>/entrada</url-pattern>
+  </filter-mapping>
+  
+  <filter>
+    <filter-name>CF</filter-name>
+    <filter-class>br.com.alura.gerenciador.servlet.ControladorFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>CF</filter-name>
+    <url-pattern>/entrada</url-pattern>
+  </filter-mapping>
+  
+  
 </web-app>
